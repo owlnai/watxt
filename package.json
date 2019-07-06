@@ -1,0 +1,15 @@
+{
+  "name": "watxt",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "node ./examples/test.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "log"
+  ],
+  "author": "Unai Mengual",
+  "license": "ISC",
+  "description": "Finally a good WhatsApp TXT log parser"
+}
