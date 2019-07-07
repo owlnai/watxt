@@ -15,7 +15,7 @@ class LineReader extends EventEmitter {
     }
 
     parse(str) {
-        return (str.match(/((?:\d{1,2}\/){2}\d{2,4},?\s(\d{1,2}:\d{1,2}(?:\sAM|\sPM)?))\s-\s([\S ]*):\s([^-]*\n)/)|| []).slice(1);
+        return (str.match(/((?:\d{1,2}\/){2}\d{2,4},?\s(\d{1,2}:\d{1,2}(?:\sAM|\sPM)?))\s-\s([\S ]*):\s(.*\n(?:[^-]*)*|.*)$/)|| []).slice(1);
         /* TO-DO 
         /IMG-\d{8}-WA\d{4}\.(?:png|jpg|gif)/.test(msg)
         */
